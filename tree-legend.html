@@ -1,0 +1,392 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/zh/editor.html?c=tree-legend&code=LYTwwgFghgTgLgOgM4QPYHcAyqoBMCWAdgOYAUAlANwCwAUAMaqFJwAEuUcUrAvKwN51WrQlGABTAFysA5IAdTQHbGgEVjACXaA7t0Cq-oDAlQN4-MgDRDW9CPgA2uGOMLSA2keECHj0ROkzAWHKBCpVUHnwk3NLazt_R34RMSlZAEZWQBtFQEdFQGtlQHxXA1YANygzAFdomIA2ItYAX0NaMOFBWkc6lyj3ACZWQG5lQHTXQFhzL0AIf9bAIzTASH-_Wvq6wIsrG1Z7UbG6iNdomQAGOMAWOUAovW6M7LzogFYATgBmMor5-sXG2RWWjsBC70AwF12c_OkTk5XzqqvIt1uZ0AC_GAUhDnq99tImgAOADsPzm8wAur9yr9rgCZGcOt0eoAv9UAQjrDfRZN7RaEAFjOaMRC3-ywpbXagF35QA5aRD3qwYgcDoyaZcMcsDqxAPbBgEGVQDZ8oAUvQ50SOsO-_PmgvchVYgELowBISqlAE0BsukMRO0KOaqVYxVsnhgB-_QAQKuCSXtOdyjnywijEWanLT6e5ANxygAyM3wXeoTYLTWYC37CJbuOKAC0VABoqgC65QDHyopAMl6I0uAVMkxCMyj4R9t3jyZTgEP5QD2BvrWLCmnFSoX3ZdPQtCzHZC1AKyugAVtQCjroAw5QzWezoamoW95uLqzi3lBNbrDeD2YE07urC2gCno9oL-sIlfVNdnXuD3dLwuHjurRl4wACHoB1bUAHopn_fZ5vzVvhds3LGsXuAUwVAHa9QBjC0ACQth2XeYx3zCMDwtGdWCAsC8UAGnNFEAMbSX0_Kcr3XQA-1z7e1SUhWs92wv5cLOAjAHLjQA2JSwyCBTXRlAH5FQBTr2Zf8GIvVdcOFQBwzUAZ01OO4ydHHfMZyJqFcr0ZQA3RUANbkIMLaDwx4-C1j_fsB0ADRNAEDI0SD14n91wAkDQP0wy4KPVhUzvKtEkAarkrJXDTGUAHfjAGgvDoXOzDThUAJLlABUAwBFfwAag6IDfKY3C1UANu1AFq9VpUkAP29ADK_HYHTJaRF1fVy13hNIgNtIjHWiXLyLpXDoSZNJAEW3QBjd2i5U1yOBIUlSRrmpwn8Ym-QAqOSTXsCLA7qKN6uIgMAR2VAGbtQADtUAAl8xqq3qWjw6iSqeQA4OUARidAF-1NJVGeTLiM5CrGJaq9DVYQBq10AdaDABiVQB2xUAP5TSuy0jzzElbMRiRkcS8QAKWMAecStsAS79AAlTQAR6MAd7lltYCT6kbb1Ec9aT6ivO8gzCVSJxi3rWG6QBgYMAF7UtsAT-1AEMYjJflxgtvqLXC4kAYoNAFAA-HLxMlogKTDnjMxFZsS8JMEz5tzWGedmspIiqm1RC7OcxFpAAZ1J5AE8nQBA_RpsS6dg_KmdYQArwMANkdVc1sW1xaJNAHDTM2tels6yIV8T5fRaczkAVZtAGj9D3ABHI7XLl19S1ziQB-U0ANW8_Yt3CWkAcAtADHFX2ifhxG6ik6dGUAVWVAFl5D3eYdgpYROFp06vYVADR_WjAGV5eiSVp3Mwzx6yDZFyvo651hAC5zQAQ8xrlPXbE-C1UATtNQMAEIzQIDqCG_HemjI0uJR_bgWWgn_uxNLn94STQBspSDVh66CWe9b8kPbL3lRfc1ZflnXQBto0ADQCtsAWUTADt_G_3EF1hAE_1QBa6K2wAAPqAEXlD-txGSQ3ejLJ2wc-KsEAFWhgAbRMAPGegBKJUgY7L6881xqkAM1KgAKpUAM6KgBvn3QeVaBDNU6OE3piGqgAiWJ8CoKeYwg4M0VrfOIY9ADp3qQnK5CsEx1YEoQA5XI8M-nlU-lFBGAEXE0R50YEmUZIAVKMlCyL4c3EywpACe3iol4BdeGYPUQLNUgAuBUAMLmxivCqIMfrEy8JABY8uqKsVjxFjEocIahyw2qAD7owA4Jr70PnmNSrD-bsNYIAGw9ABvcr40BqwWiAHt4qJPj14tmdvBPqrAiqASrIANGUmEhhnjBeRAt4yAEQbICVZADOeoAB-UYnrgGJUmpeixGVUZiZM4UpAAUrkQwA-361MZIoQApcYpiwnLDebpnBozCFeQADaaABdFDwgBAAxHOMApQT8a_VYMFEKQEOh6DrgzFh_CTJxC2UBQAFSqACPoqstSWinMAs8a5TS5HBI0mcLZ25uiPNOmQ6xEiFGbNCmPNKgAgY0AO_KXyyr6JcZdDRALtmAUAMPygBt-KrIASW8dCAGj1WpapFIjIoQPdZywWheVaIAM209kHwOaspuNjimsEAFzKgB99RJV0LwEKPrPKOSvBlzLvLtAedWJ5ajaW32xP0FlnzBXfKhS0thn9_rir5QK9FWKhW_MJZ_YUuK1VlFGSkt2V4ziAD6feOZKKUqWpXPQxoTACXpoAfHNADa3oAU_N2VQPVTC7lgAIQ0AHAqdVADStq6jB0KeoCyon2TcgBa00DT84N40BaMhNYAbpt2hosxbUrVCk8UrjcbG-CjIgKAEsnUK5qqVH0KS8s-gBvzzwR0Xx0aZXOx-rfFo1aOiAHHE9C9bmmNtaaG1gRaQp1qlZC7tRTb4Jvjsm1NqrpWjorbA7Vs7Zb4o3qk6cwokyAFPdQAXmaAF-AktK5DnWs_nEPdHy2XDo5cKv53K90igLYAFA8gFds5cewErA91AWVWmnVsqQnytYIukdy7s0Eo9csNUczFmKQPaOS1J8NUlkA5m39eqPwXVRkYd0pQaC0GyDAdgnAoAtD4OjK8gBbh0ABepscUojiPdUKZP5mSAEs05ZjhdbwUAB9uBDACeGWoPJKyy02AQ1cGMMhAAcFsyfUi4Wn8DE-JwAKrHSfrKUShn45ONBkNxxQGRcYiYWGJpoJ4hwKHTAAWjuFuHceiZM9o024GQRntIZgsycYzymYjI1AwzWTYnuOAGFFCJunqX6fCGJvsoFABpmYAVwyE4YQ875zTEWYuAGsNQAmYpJwS2hls4yPSQXRnUK8gBHfUAPMKbGcxCZpXG5YhBchmDMDWesKxhSflRvlxjmJFCAHJNQA2rHleMPB-CtX6s1mhNCT4ZRMOjGw7h0AkBYCIFMLgcQ2A8BEDIFQOgc3oDwGQOIOAAB5AADnAfATBSBGFIKgE7Z3CC8C9HUOAqBUBmFO0d6QBXHBwBgPgYgxBxAwHcPgOA4hgD9e-79_7MADvTBkMAVAuQkCg9QJkcQMgJmQTMOIf7hBcAfbCE997nYACk_WscADM4DuBOKTi6qAfvWCp7IVH8B8D0ByP1jgXAqttgZleb74hxAxH63UNnTB3BWHoFwEgWP0ervRN-TEAvxBNBF44MXsPJfS-ILL1Eboe0ACN6fLZgGAF79P3AAGJ6BNBOAcE4wuMfOCRwzpAPOHvzDgCAI7yxldq_51YIXauudQDsCHpEztCfuAOLT34FOmcyFhLHsSRu4BPeAM0ZPlwfvEAgAnwoKws_zCQCAYARuzAAGV8AAC9yrOyIMD_AOQAAqgeAAi4gTsQEkE0Z2ZgoAG_EGYfHDMjuoCQI38Xsh49q-ECz077OzAAEEzC_dh8AfAuBcCy57TkNfEvft57l_qsSWOoCo7dx7y4_fB_D6v9mMfE_TtT5kDno_Pa58A4XzkFf-_ZAb63x3x4j32IFhxnw_1YAAHpICjs8ACASADQVhCwvN0NfhQcjtoAJ9L9PsxhydUB6BEd3BlskB6BrAOBCA4Bj9UCxJxAAAPWA3HJfXHM3erKAI7JHaQb7fIZ2KAQgfAYATgW7NvXIGAQQqfHkFYHgvggQ5_QgYQ0Q2QgAVSOy53KgOEkN-GB1Bwry9yx1YA-2EHbHpwELMH0NXEpSMkYDMAt1YAACJLcVgVg2828l8l9bD9BoDAA_tUAGj5QAELdAAcjMACcgniVfQgcQHQkALHSQCICwoyYwc3QHGQBwpwlwpfGQaAwAfr8AjgjgkWxDDciqF8ijIUC04KgwgcCvtvdfdA9_cfxldVdnYQ8w8iMmgI9fgo9OxC81d49VQujnZU909mgmgi8xg38E8YhoQRj6gS8y8Xsq9a8cp68-DTsW929O84Bu9e848B8h8R8VxH9J8wDxBKdZ8sgv82cf9V9QD3AADt80dd8rjNdD9KCwMxgz8L89jswb9dj79LgDjZCD9c9KCID58Ljl9HibjN87jTjhAQCjiTjkDXj6g6CGDcAmDcAWD-92DoguDxBnZ0DMD8BsDCw8CCDL8ZBiDSDcdeCXj5cxJeD-CxC5CRCmTpAJCpDGTZD5CmTlDVCcp1CIDRcQdgAIi9CDDYjLhCBjCcgzCYieIrCbD7CJCUj3CvC_CgiQiiBwjdCpA5SCiFTEjLdlTnD0jICsiNSCjJIii4j3FrSVwSiqFnB3xShyA6AqAgA
+	请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    myChart.showLoading();
+const data = {
+  name: '数据资源目录分类',
+  children: [
+     {
+      name: '业务资源',
+      children: [
+        { name: '1 公共卫生', value: 1616 },
+
+        {
+          name: '2 医疗服务（医院）',
+          children: [
+            { name: '01 临床服务', value: 593 },
+            { name: '02 医疗管理', value: 330 },
+            { name: '03 运营管理', value: 287 },
+          ]
+        },
+        { name: '3 医疗服务（基层）', value: 843 },
+        { name: '4 医疗保障', value: 1554 },
+        { name: '5 药品供应', value: 970 },
+        { name: '6 计划生育', value: 13896 },
+        { name: '7 综合管理', value: 1594 }
+      ]
+    },
+    {
+      name: '主题资源',
+      children: [
+        {
+          name: '1 全员人口数据库',
+          children: [
+            { name: '01 全员人口信息', value: 721 }
+          ]
+        },
+        {
+          name: '2 电子病历数据库',
+          children: [
+            { name: '01 业务运营', value: 721 },
+            { name: '02 临床诊疗', value: 721 },
+            { name: '03 电子病历', value: 721 },
+            { name: '04 基础字典', value: 721 },
+          ]
+        },
+        {
+          name: '3 电子健康档案数据库',
+          children: [
+            { name: '01 健康档案基本数据集', value: 721 },
+            { name: '02 疾病管理', value: 721 },
+            { name: '03 疾病控制', value: 721 },
+            { name: '04 儿童保健', value: 721 },
+            { name: '05 妇女保健', value: 721 },
+          ]
+        },
+        {
+          name: '4 其他数据库',
+          children: [
+            { name: '01 电子病历摘要', value: 721 },
+            { name: '02 电子健康档案摘要', value: 721 },
+            { name: '03 人口基础信息共享', value: 721 },
+            { name: '04 远程医疗', value: 721 },
+            { name: '05 互联网+医疗健康', value: 721 },
+            { name: '06 家庭医生签约服务', value: 721 },
+            { name: '07 卫生健康综合管理', value: 721 },
+            { name: '08 医疗卫生监督', value: 721 },
+            { name: '09 公共卫生监督', value: 721 },
+            { name: '10 个人电子疾病档案', value: 721 },
+            { name: '11 健康危害因素', value: 721 },
+            { name: '12 疾控综合管理与爱国卫生资源管理服务', value: 721 },
+            { name: '13 疫苗和冷链管理', value: 721 },
+            { name: '14 医疗服务质量与绩效评价', value: 721 },
+          ]
+        }
+      ]
+    },
+    {
+      name: '基础资源',
+      children: [
+        { name: '1 服务范围与对象', 
+        children: [
+            { name: '01 患者', value: 721 },
+            { name: '02 健康人', value: 721 },
+            { name: '03 医务人员', value: 721 },
+            { name: '04 管理者', value: 721 }
+          ]
+        },
+        { name: '2 地理特征', 
+        children: [
+            { name: '01 自然地理特征', value: 721 },
+            { name: '02 人文地理特征', value: 721 },
+          ]
+        },
+        { name: '3 法律法规', 
+        children: [
+            { name: '01 政策法规', value: 721 },
+            { name: '02 标准规范', value: 721 },
+          ]
+        },
+        { name: '4 单位法人', value: 1732 },
+        { name: '5 编制体制', 
+        children: [
+            { name: '01 人员编制', value: 721 },
+            { name: '02 机构体制', value: 721 },
+          ]
+        },
+        { name: '6 方案预案', 
+        children: [
+            { name: '01 方案', value: 721 },
+            { name: '02 预案', value: 721 },
+          ]
+        },
+        { name: '7 人力资源', 
+        children: [
+            { name: '01 人力资源规划', value: 721 },
+            { name: '02 招聘与配置', value: 721 },
+            { name: '03 培训与开发', value: 721 },
+            { name: '04 绩效管理', value: 721 },
+            { name: '05 薪酬福利管理', value: 721 },
+            { name: '06 劳动关系管理', value: 721 },
+          ]
+        },
+        { name: '8 财务资源', 
+        children: [
+            { name: '01 预算管理', value: 721 },
+            { name: '02 资产管理', value: 721 },
+            { name: '03 资金管理', value: 721 },
+            { name: '04 投资管理', value: 721 },
+            { name: '05 筹资管理', value: 721 },
+            { name: '06 债权债务管理', value: 721 },
+            { name: '07 会计信息管理', value: 721 },
+          ]
+        },
+        { name: '9 设备资源', 
+        children: [
+            { name: '01 硬件设备', value: 721 },
+            { name: '02 软件设备', value: 721 },
+          ]
+        },
+        { name: '10 卫生健康信息化', 
+        children: [
+            { name: '01 全民健康信息平台', value: 721 },
+            { name: '02 医院信息平台', value: 721 },
+            { name: '03 应用系统', value: 721 },
+            { name: '04 数据接口', value: 721 }
+          ]
+        }
+      ]
+    },
+    {
+      name: '新兴业态',
+      children: [
+        { name: '1 互联网健康医疗类', 
+          children: [
+            { name: '01 互联网健康咨询信息', value: 721 },
+            { name: '02 互联网健康管理信息', value: 721 },
+            { name: '03 互联网诊疗服务信息', value: 721 },
+            { name: '04 互联网预约挂号信息', value: 721 },
+            { name: '05 互联网健康促进信息等类型', value: 721 },
+            { name: '06 其他', value: 721 }
+          ]
+        },
+        { name: '2 远程医学类', 
+          children: [
+            { name: '01 区域远程医疗服务信息', value: 721 },
+            { name: '02 区域远程医疗管理信息', value: 721 },
+            { name: '03 医院远程医疗服务信息', value: 721 },
+            { name: '04 医院远程医疗管理信息等类型', value: 721 },
+            { name: '05 其他', value: 721 }
+          ]
+        },
+        { name: '3 精准医学类', 
+          children: [
+            { name: '01 早期筛查信息', value: 721 },
+            { name: '02 愈后监测信息', value: 721 },
+            { name: '03 疾病诊断信息', value: 721 },
+            { name: '04 精准治疗信息等类型', value: 721 },
+            { name: '05 其他', value: 721 }
+          ]
+        },
+        { name: '4 健康物联网类', 
+          children: [
+            { name: '01 移动医疗设备信息', value: 721 },
+            { name: '02 移动医疗采集信息', value: 721 },
+            { name: '03 物联网设备信息', value: 721 },
+            { name: '04 精准治疗信息等类型', value: 721 },
+            { name: '05 其他', value: 721 }
+          ]
+        },
+        { name: '5 人工智能类', 
+          children: [
+            { name: '01 智能诊疗服务信息', value: 721 },
+            { name: '02 智能药物研发信息', value: 721 },
+            { name: '03 智能健康管理信息等类型', value: 721 },
+            { name: '04 其他', value: 721 }
+          ]
+        },
+        { name: '6 新兴业态其他类', 
+          children: [
+            { name: '01 其他', value: 721 }
+          ]
+        },
+      ]
+    }
+  ]
+};
+var data2 = {
+  name: '热门标签',
+  children: [
+    {
+      name: '保险',
+      children: [{ name: '相关项目', 
+        children:[
+          {name:'核保', value:721},
+          {name:'核赔', value:721}]
+      },
+      {name:'相关数据', children:[
+          {name:'2电子病历数据库-02临床诊疗', value:721},
+          {name:'2电子病历数据库-03电子病历', value:721}
+          ]
+          },
+          {name:'相关元件', children:[
+          {name:'病案首页标准数据集', value:721},
+          {name:'病案首页填写规范', value:721}
+          ]
+          }
+      ]
+    },
+    {
+      name: '影像',
+      children: [
+        { name: 'null', value: 2105 },
+      ]
+    },
+    {
+      name: '数据大赛',
+      children: [{ name: 'null', value: 8833 }]
+    }
+  ]
+};
+myChart.hideLoading();
+myChart.setOption(
+  (option = {
+    tooltip: {
+      trigger: 'item',
+      triggerOn: 'mousemove'
+    },
+    legend: {
+      top: '2%',
+      left: '3%',
+      orient: 'vertical',
+      data: [
+        {
+          name: 'tree1',
+          icon: 'rectangle'
+        },
+        {
+          name: 'tree2',
+          icon: 'rectangle'
+        }
+      ],
+          borderColor: '#c23531'
+    },
+    series: [
+      {
+        type: 'tree',
+        name: 'tree1',
+        data: [data],
+        top: '5%',
+        left: '7%',
+        bottom: '2%',
+        right: '60%',
+        symbolSize: 7,
+        initialTreeDepth:2,
+        label: {
+          position: 'left',
+          verticalAlign: 'middle',
+          align: 'right'
+        },
+        leaves: {
+          label: {
+            position: 'right',
+            verticalAlign: 'middle',
+            align: 'left',
+            //padding: 10
+          }
+        },
+        emphasis: {
+          focus: 'descendant'
+        },
+        expandAndCollapse: true,
+        animationDuration: 550,
+        animationDurationUpdate: 750,
+        itemStyle : {  
+          normal : {  
+            color: "#00DDAA",//图例的颜色
+            lineStyle:{  
+              color:'#00DDAA'//线的颜色
+                    }  
+                }  
+            }
+      },
+
+      {
+        type: 'tree',
+        name: 'tree2',
+        data: [data2],
+        top: '20%',
+        left: '60%',
+        bottom: '22%',
+        right: '18%',
+        symbolSize: 7,
+        initialTreeDepth:2,
+        label: {
+          position: 'left',
+          verticalAlign: 'middle',
+          align: 'right'
+        },
+        leaves: {
+          label: {
+            position: 'right',
+            verticalAlign: 'middle',
+            align: 'left'
+          }
+        },
+        expandAndCollapse: true,
+        emphasis: {
+          focus: 'descendant'
+        },
+        animationDuration: 550,
+        animationDurationUpdate: 750,
+                itemStyle : {  
+          normal : {  
+            color: "#5500DD",//图例的颜色
+            lineStyle:{  
+              color:'#5500DD'//线的颜色
+                    }  
+                }  
+            }
+      }
+    ]
+  })
+);
+
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
