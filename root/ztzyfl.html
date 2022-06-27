@@ -1,0 +1,939 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/zh/editor.html?c=tree-legend&code=LYTwwgFghgTgLgOgM4QPYHcAyqoBMCWAdgOYAUAlANwCwAUAMaqFJwAEuUcUrAvKwN51WrQlGABTAFysA5IG45QBkZgEVjACXaAwJUDePjIA0Q1vQj4ANrhjjC0gNp7hg2sIcixU2YAtFQBoqgLrlAx8qAHU0B2xoDJejo2DgbGpuZWoY52jvFOEtIyHj6Ah_KA9gYh9glhhiZmFqzWObkOcWXxokmygE-6gFpagE0BgCH5gOGagM6aAdmV8eEFUcUxPQKJLjKAFhGAXl6AL6mA5JqA8DqAWP8ADAgAzABsAOwAjAAcWwCsrADiAEI6rABuUEYAri6rm7sHxwC-uqXDtqPJgDIRvkWWwALDsAEyHACcrD-lxu9xcIPBUNYHyGPX4v1kk0APAqAcOdFmDVtsAKRw24PaSrInbNbLHY7ZZ0-k7LaQtao9G5AC6XMcaK-ZQq32qY0AUZqAAi0up9vsI-pEiiVZeUsRMZgsVusoWsjqcLtprhTHlr2bqBcqfqL_oC9jsNkTjrCDfDKaxbfblu8ZRbMVbsfjFpsEJDDmTnUaqesNiGwZC9htDnswWsIcsDpzBZVeZmEubhsLhn6ZIA3RUAa3LdWXywrRHOVX3OZJTOZLVbLPXkhGRtt55X1moyAErGEd13d7291W4gmt5Zhw2d1itjPK7PfN581ir3LrzNb4Q9gRDIuAVldAAragFHXQBhygFguO8hFq4NawWEkXAFhygEKlQAL8YBSEIrZSrAYlXzDdHCLQAL1MAUgNACnoz9_2GQDFVA-IX1lIsmw1HZIRBBANjTNY42BHVjnOeDlRdFwsJwvC9gIvYiKOZD-Tvb4-zGQc8LBHY6UOVloSdedXU47jPT41EWPzScAx2YEEC4ucKMjGSuNBFNNjBWiU3THcV2Qg8hSY1VAHl5QAjNLgiSAPyBUawtEZ0PVJYiSJBBDg2W0IXbcMFyc1ZXPcr1DMtBtZEHYEtjBcK1gZCLhy810woi5Noq2cTArs4KZCnRZIWDYEFIjRcEGWSF2QOLDDmWYFgUhBlgXeQy90qfTclQsoizLMjKkQmyfVVDCWyK5Ytn8zzBONZYhpG5qMVVQc1ltNsBMU1h5sZVLayFKSCTBBAZPyhdWxUjTDl2YFjtOjkdNlRqyiusobocabDw21VABY5QAovWgwB0106xxuqfVjDIg6DAEYdaDMl-3J_uA3s0uEezm0WcEwpcpMFs9PZtQ2Ty4bG6Rka2VGNMZDGsbSp7NqLOaztjBaKtivGVppuNGXpimWq2xY9gQML9tHIr6K2NZeNZelgT2SE6r2Zdrr0iyUKBjLTLBiH5YSaG0tawsMv6pGGRyzGtiFhiSP1XHloZLCEEN43iPJtWOapwEIrCtyzuGhnlpdrY3Yi6X2YSNjkiyjZcNnEdxo2PDQUTSFkwIvCmRl74HtzB3bEV_tAAGLQAYrKzwBT81VwyNZewO-ocpHkyK4E3N1Ui4soqvKtrgLS5Q2bAVBPDmXpT2Cq7pkJt7gP26LLLZNjPnxrOyFKtjSFtkTea9kx5PhlT-IR6118MugwBa00AODNADG_Iu27lKzHxh2Ug9kXWdjkxlTVNiP8Yf4riPW2yb4HQEKq4uMORLQKn_LCtFP69THgGJ44cG5dmWLGQ4oISp2kQULEEl0Gpy2QtvKoGUOrp3vP0JCZ8VQIw1EueujMlwj1iB3IcQCDrgInJA6cg0p5djXj0De_INwbyejgk8F5LyQ3Pg-IC2DM5jEAMryWdT7KhLl_cuiMwShy2EyZEo0vaqPUR5GhpCMqDh9q5cWdU-4LiMRsExrdFEsMWIcau7DCqeiZLsZYCZ6KWNcovThWY9K8K5PwjcRZABf6oAAQ9ADq2oAD0URH6AvuItuOCwIZUAMUGgBQALkIAIl9ACo-jEv6cTiE2J1hXCh-oqFFSYdfOhi0X6LgqaxTmM5HHUMwW3LekjkiAG5lQAJUaeHcJkcYuTCHWQBhAopiNVh2mBG4jylDloTMsdM6xoz-yDkZIyKK2MGGujWeo7Geigr9iyidHmWwmkuRBELEMKYGI1RRHddeWCEntNkB0r6gAuc0ACHm_TBmiKIT1ZhYzyGDQOBLRZmiCozhBbPe0SyAUrMBLsMEpitmImRrCyptjCbRjOUNaMyZcVxzpD7dkPj7qPMBiQ9q5YCG_OGVfCltl4aAoGnxPYxUTo6OfjS-IczdpsjZSGNRUUIT201nQ7i-x1JmO2VFWi9o6mSVsdxHmoYakTLWHVNMSJNj0kQaY-5XC_EvT4UMRqB5UKCMAKYKgB2vUAMYWgAJCxvJ1BRLUgkZRtQ64JgAacwCIAMbSYkuoxM8mQgAqOU8N6uRlZ8n_IxcypGdJymzIKiJcp-z0rwsWGdOkyYKqOhqVm-BwtPQKpmkqnaKizngghLRTGhwiQ7AqnVeqJDuGPQIYkhwRYbUyJ-bEsRBTlljF1q2RBLdwUHSKqO14Ja6x0OTGy6psDWDzomjOymGUsqrCIjiyqKY1FghUdHVM81SU8nJSBSlGVAAE8oAZfNzyAFKjQAUiqAENlXtgbY39mHQLbUddSm8rTD-9F9SnZIwOGCaVlEwNrsdhu6Saw5J7ErXuleRFXiYxXqehIrb9ztuDfg4u0aRlwqHcUoqwquVlM5dBsuIH9gpRRfjbS3KDljCyvsOSaxK1Jg0vNT04thrHUw_EbDQm-HywERlQAfa7nkAIXegAwFwDYR-lrrL39kABtZgABCMANHKaSbXybfUpsVZClhWwIr-mppnsJAcVQYhFmN2SDwg9IYa2pHNpu_mx-D80kPzTpHHBdXFtItLXLh1TYxACAAYAFz1PB6YU9y99wG42EzWJsadSbzHrFS2aZj6b2LO0OK5YavcGPLoK9sNlOxqOj1g9te-CYzlcU8VCCEGwdQgmbbpVpoXlRFnA4AaPVABrPoAfh1zy6etfp-LhmSEscbBXGSu14yuRmX-5Nsl9gJhhVV2hIHEFQmcfRmpu3Z4VRSu5zmjIw6VrcUyOq7IqpEhDGFITjgRNtLC8kQAXQGAGW_QAHBZjYmwR_tMbEuftI4ccj47-bg40WdkDt3QTAic6weHMktv6MOdJe-NdK0yW1GFBe2xtiz0Rwa3xXWJHvdkIAfoDAAkbueQA0fIA5IQlmzoPxlkehcttVHOwWw9s3rcESPLbgb5xjgk4JMuVvjhNFL3FLHxnFiL4Lww3s9YyoAWjkOmAHtg2LBmgdEY_SR9nhEP7pf5ib7LRn-cpeKjJRHJWbc1Sqmjmb_pxdYtOdz1k2xjpWbwn7yrpOyXk6eZTks1LAd_INyDo3QK2xm_Gi73L1p6FqqTx5qBbDufdmVz0IPDgxNcgk_2aTgBy40AGxKin9fKcDsGwAsoqAGrXQAI5GACQlQAi26AGlbPXUea-zuM4SBARs0sre8oP4alvpvJ5CgiiahO81LrUW4ox6fObcwPTi7j9aKp0dnrRJXLbz1BrD4APp9AB6noAa2VAD4rp37vdKrds6BQVmuw_udP7HaLvLixOI26R9_ukK_bFnJvNuciRVpwooRFtwCo5nsC9D86xg1JNS9AAfv0AAgVeTQAODlABGJ0AF-1K_VQeTQAWHMPxb9L579Y8Bp48R9-YxwyCU9F0qEACatNQJocUYDhBXt_FaxAkXoixAB-RUAFOvQAXflLUq8e8Kc1d-xAAvxUvw6UADNtQAQeiD4SD4kv5cZ-8LtZU9U446MuVzZk0nh9gtDAtGJJ8P8U8uJds61NkakLCm0VFGCxcv9B9ONs8fdbRWQop9guJkw2DNw4CDIw9AAG00v14MAHUEq9QAY7lAAiGPPEAG1vfOZQgdYjWbdnSg7PBwz_eguZDI4OTPFg9I_PLDfwlTCQsYYI3gwAGhVABspXiMSOB1Z3IOYMh0TzMOn1TyXRoMnwz1YXyI6NTVzyam6zQgygEO7SzjqOjwaJSMwlwjZDHQT1fiJ3fxy2_g4hUUV0ARqXtHlx8NaMygDC4h5h2AaxknwnpFawlljHtH9gGNuiGJFAymOEAECdQAU7lABoOQEMAG9rQAQrkn0Jje910H8KDn9zM-jm5p09jBwIpKsStoSci3c7FB9ENs8TpaIhZWQKodU4x99OsQtxDhj-x8NmcptVDJ8mUgSB9dgjgh4aSaTwN649DR8qSKpaTaSwRRUui6EwMG0NIkduS61_YVjzsJkYEykSYQx2VNheN1EMED9WlOC7ii83V-wOhhDRC79Q9Sjkh6hABZJWEKIP-NoNvlIzSLBPhJ_naIYL2M3SzzNMKOE2KNrzD0AFVtQAcrlAB8c2EPQLU0AEdlJneREkwdaYkzMjXiJbCjC2UMhtTbSEwEOkBMKKTYpdeM6HS6IUstBDKXP2SWOORBEqPbDrWWEPBlAksYV0nU-I9A_eQ0rotQuNctBMU0aqEqFskqFKBkskxmBsn9Zs1stsjkwpDNNycM6WErYcmFQUo0_Y8XexXYStDlXiflCqBzekG4uUvEzU0s5IaQwALn9AB3NJv0m2rynK_VNMo3NMHCyIhXNJtN6PPPtJe0dIVhdNdNaB-L-KPLEM5P71bGjK5zBL_Os1LX53n0ZiAr7yYPg1chxWFm1APSZHmgAWLQfNgOLIvS1NkA6EAA49QAQci4iEjPyNTBzGiSkCj0z-crzGFrS8jRT_1fDXt7jtZ-xABC6Jb0v0aEAACjQAenMDTCLSDvy41SK7TyKM1KLRwbyaLWCUL2CjVDUuDTVQhzUjw8FSwnUJIWcM4eCMozwrxAANE0AEDI9U_imPZIMNCNLIKrb-K8QAIMt9KIZLLVRwJwYLKt5jITJ7LXKiwZEPL21VQPV7UfLsFVQOpRMAlxNlSxgzx_KDKjKVD0KtzZAzKvVI1vgNKIKKSIpZj5iqCXBMrCcISRLP8GRKoa4EwDsl1iqqoo4ToJLasXIwQTi60uJhpJYUtLkcSiyNySyHj-xTJAAG6MAFV9GKviuK5I40xGe-eiZo1-Ka2MvWE6KWUcizBtdrDDai8XLdZEvoxkfHEnW47cRinoIsQAClctdBrhrI8iKgzxqgUTZprCo7q5qVF2QNUxLcrowUsplaqkZCYapK02Q0x8IUtgaQb6KnzYhg1ABpIy4vOsMpGqSMN2DM1BS0A3uqeGFifgvMBHKiGlRxKxxtOm-ongauzzOgbWKhBCZDKxqjBrQqPwwpkGk0ACflC64k48gSik--D2BY1gLmycjmoq8HBMUBIXIW3iOMb6wmT0HFNRPVDYBteaGuBW6EaSvwum-AsPQAcfjAB5UxZrhsuuMuurVHZzqghx5q3Wh10UKpT2zW4xhJqVtoPUD2toRO5hSw3xBs9q9tpq6vip6rGEADbtQAedM9aaziKka3boQebI6sav9sJaQSUxz47Lk0ypysp4N7QYL5aSpzplJDZA99q058T_bkhAB650AGCNQAFrNAAmdMAAO1QAAl9WaAz2bw6bqBozacrIwIcnq6QdQkUkd8U-6ScXbpzK5B9VVtqXY8JXIToZIsJKo1zcSVdDrKgixABk-I01DvhvqOAopPVWJn_LFK0hhxHqhMHnloHvPudrToOOtjymzx4zZQ2VZDZXogIh9uXuLqYrGEADRNQAEnkt6DbRrEa27NRJkwVzbdoFkYzT7O5m43IkcplSr-bW7R6oLjjs9hZaoeSpk-746P688FSDqlStL-wfAwlMhABHRUAGq5WKhGgIhmwAUR1ABEG38pSoQkDLGuNo1CqkTU7uR1kk6NQdWV3UXJinxtEdZBinWvjT5SQw8L41KmnpKj2vXM_s3JLtkEABtFQASO0A7ABavXYZ6DSsBMaOSxXg0R5vMamlgcDHloIhUiR02G4m0OHpvoJBylJGzwJyjmwnBDRPClUaXrzxXragynKMAF4QwAdiMjGupOGQHuGKCo4plNtIG3FoGrapyoSD0uIkyuycnuJvrnIhYGshoNUiJEEsJqoFlCyU5wbyhg0onABZHx-MAAubQAAFTYnLIW6jav0-Jsqvc5iCqsnnYjYUaB6xnhZvqNVdoXC-iNV_GDhJYwp8IEHVaGKv6jqMp6hABvzUAG83PqrpqGeJky0B-xRkFeA-iM4BXaNMNGE-kZwMBe9kEMJx55gicC0x3I8XHaO0KXFaleVyBeJFFBAhwYzZ1ejKHwQAOzN84Dmjn1YTmpjQGdoaqebUXTtbGMTEVqohcjgcWVaR6spYw5JIQGt_NZ6zp86qWwXFSNHv7kgfBAB-I0AGkdQABnU5MEXegkXd7GjDizyvZ74hGjbVl_GmrwohcxWD0JWZHlVQQkMpkfZl4V4VWJZaXiH6WtnCSI82avzUG745JrmFx75MmBaU83ID0JZQLloLWNJXnZXuY6ouMqo2QuJPQVEopEx1XcwiGi7nwIrkhAAd-MAGgvV5Ohne6rfsENwALHloIZAHKiwQ3ABHfUAHmFashNjKENwAYf1jx03PLM3g3zw5M83fLE3g228ul4382o3g3obAAuT0AE1TKt0tgtuQhtxoZtoKstwAEIzAAyv07YSVVBDcACJYj8fTDNmt15K_T5dAwARc9AAS7S6AnbGBDdeUAGQ5AOpd6tld4NtJLdlt7Vqt31zecK0hsYQAJLlAAVAMAEV_AAaleRtXDcmJowyivbvdeQNOXeSDfdva0coav0_e3e_ZvdvYMY6Uv0AD9vXtwDg9i9kDrXQAQZVABs-UABS9QQwAHLSYOu3X2QPXkMOvtAB07yw8HaLB_bbcaEABiVWd6F4j05mQH9zwQAU91AAvM0AF-AlD462j5F8PI941MKkhrVwO_R8DqD3ijcExhpsPKD_0qNHp2GTs_vHaM6Ge2ke5_8xk10JTlrQreaK5gckV7GlRRtKKIXIz3da-s1hEhtHmWiiFXaRBCaOXeeF4S171k9iFsJ_sIgwAUx1-3t7n30rGjZJQTGZgvPmYMM0G0JU8zRbovcXZXCZ4x_rDYjpqXBN1n6nNKGbAAjtUAHw0mT1KnljWxlJROPMpzGCEAiCBs2Ts_9crutcHTnQ4fTrhqEleROmw9r1Oyz0equTYBrFLeW7iNkLCYWeW3Ywu9zzVyFw9_zgEiLkivlBeF_baoZifYRzuTGCae3fNLbyqb6-bfrr3Cp-xleYqA9KqOONznhPjrg09wT5IK_G1VAgr45uT4rhKmQPAlQV74xorr50Bp4QWDbQ-3lRWixU1jbwkcqBta1gqf-MM8Ll9xwlMa2CespLSOtVDBZKKNxIJzq9R7qhl2QFhqK61Z9X7uJ97onhm3WWMeDBzTGO3OebCHGWr-H9kYMOkJnqqFnrYFrhJ1ZEqfOrCIXYX2e0XmR5LdH_9Y2SWIW-McERkewjL9Whhz7jTQAJtt5NKfum9XemTS0bU1bG3qqRvrGkCjJvmIPPcgixEPUPde3v9euHdZ4NqoEoQejXXQ3fJZwpPfY7H4l460hd2VaJg-ZHZJsVSbowzpqm7XWQ7dru20bed5ZugH6G_aLR1Cio5iKooVqve1HBIyhoF48-WrFkBe6PQoho_5-J80a_4FCX3GkZZI61K06oiRwpbQ_4qrWsk_9xj3rf_Wz3Okvor829ABjdyffm6y8-9eU-Un7Dp9DrIpKlqZGarGbuo7JK-WjX5TFZE37tlMNsfnQXiinKq7MQta1ZCJvvl4jORjhceKmjAWtZn78suDVeUAHMjN8XpRfubzWCv0W4TR60A8QCmzx352cQBYsO0LqhhSV9uOorPbJK2QGytZIIYdvvLycg1wwoK8IWB1TqbylbudLdXp5zGB_tx-U_B2BJ1n6aMeOAAnrqeWTBb9-Gh0DVB_Dmpy43YQuTYNwIj72JJ43ODvuyDwgehJkJMU7Fb0eiD9k-w_B7olU8BnhpMDqafin1wT9gfi8LLIAwP1aG80msdU3rUhkYW87SUggfsQI1akDbe7qa1D6UADN2g3VUEkcMogAGQC3w9ggdnRx-wUdAACfGAAQHU8HcdZCl-R9l-1kCAA7TOOqAAWG0CG8tg4gAFBtAAhjY3pAAlk6xDAuyQNloAE7TQAOQG9gxwWEJkDnhAASVqX40hhQkKvaULxyCZuYwRAi9zkxYFcCl-fAnJjE4vQaBU-RmueG7aAAmNIrwND0hAPGQDgW-6EFiCFQ8sKFTu4CdahyQBvIAHWgijoAHbFQAH8pjvWlIbTiGyBFh47IDjsIWGABf-MAD1dkMIW7JA1hN-SYbxzkokCSicwl5F9CIKAAKWMADziegUACXfoAAlTQACPRgAd7knBdHD9h-FY5VEzhyPMYMCK-F4hwRkbSEU8I_A6NXAsI7bBlFkKztAAi8qABVHUADi6oAEMInISiPRxjBUC3w_4USNdw8dpht0BSl8CujZg3gNAWgKAEgCwBEAhgXAOIGwB4AiAZAKgHQBZHQB4AyAcQHAAADyAABzgD4AmApAPQKQFQBSiZRhAXgM9EcBwBUAqAIwNKIlHSBUIcAGAPgGIDEBxAMAZIPgDgDiBgAnUA0UaJNEwAxRRQGQMAFQB3AkAVo1AFcHEAyBFKd4IwOIBNGEBcAeooYBqN1GyASaEkf0QADM4AyQOZkMFQCGjzAcY2QF6PgD4B6AtwTqBwC4ARti8YwA0eIHEA7AYkmYpgMkDMD0AuAJAf0T6Pkq7gJIAAIyTGciYAYALUUmOSAABiegDmiij1ih-jgd0cmKQD1EtYcAEABKMLFmBvR8sIsEWJLGQxcxUAKwCuO5DywwxyQCelyBjGpiZADaMMFyBbFwANRwAbcUeNrCGjiAEAfcRCEvFlAkAIAYAC2KMAABlfAAAC9EQ8sIgBaPwC3AAAKrOIAAi4gKURAGkBgh5YRgKAE2PEBGAQxL0CUagCQD_iKxsgPcTEnTHSisxRgAAIJGAjRTo4APgFwC4A6xDsW4MRMrFGjbxg4ywbkH9FQAvRY4tUZUFgnwTEJ7EnoChLQnSiMJMga8fRIIQ4TMxtwQiTRNkCkTyJlE5CNROIBOisJyEAAPQqSJReAAgCQHxjLANw-eJ6FaIlHQA0JbEnBNGNQD0A3RyQTkUgHoDmAOAhAOAAxL9ZlBxAAADw0lBj8JQYjsUYFgkSj3R0gA0Q8HlhQBCA-AYAJwGVEgS7gMAKKRhIKzLBQp4UyKQJMIAxS4paUgAKoSjcxiICqL-MtHAA3xk4_0UhKOpJjIp3EjtIwCMBdjZA3YxKcsBAkgTLgakwAH9q9OQACFugAHIzAATkHIQiJhAcQCVJABlSeJCETsWaIalNSWp8bNSYAH6_XqQNKIGEMGxPrL4FuDeDkA6AVAIAA&decal=1
+	请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    myChart.showLoading();
+const data = {
+  name: '主题资源分类',
+  children: [
+    {
+      name: '全员人口数据库',
+      children: [
+        {
+          name: '全员人口信息',
+          children: [
+            {
+              name: '已婚育龄妇女数据',
+              children: [
+                { name: '表空间大小：0.3671875 GB', value: 0.3671875 },
+                { name: '行数：741259 行', value: 741259 },
+                { name: '空值率：20.67%', value: 0.20673011030011793 }
+              ]
+            },
+            {
+              name: '妊娠数据',
+              children: [
+                { name: '表空间大小：0.359375 GB', value: 0.359375 },
+                { name: '行数：816205 行', value: 816205 },
+                { name: '空值率：36.95%', value: 0.36952986582325087 }
+              ]
+            },
+            {
+              name: '其他',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      name: '电子病历数据库',
+      children: [
+        {
+          name: '业务运营',
+          children: [
+            {
+              name: '门急诊业务',
+              children: [
+                {
+                  name: '表空间大小：1974.6083984375 GB',
+                  value: 1974.6083984375
+                },
+                { name: '行数：6021305179 行', value: 6021305179 },
+                { name: '空值率：14.21%', value: 0.14214132362833287 }
+              ]
+            },
+            {
+              name: '住院业务',
+              children: [
+                { name: '表空间大小：2020.568125 GB', value: 2020.568125 },
+                { name: '行数：4727231127 行', value: 4727231127 },
+                { name: '空值率：9.94%', value: 0.09938719504491145 }
+              ]
+            },
+            {
+              name: '其他',
+              children: [
+                { name: '表空间大小：0.0078125 GB', value: 0.0078125 },
+                { name: '行数：3810 行', value: 3810 },
+                { name: '空值率：2.14%', value: 0.02142857142857143 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '临床诊疗',
+          children: [
+            {
+              name: '门诊就诊信息',
+              children: [
+                {
+                  name: '表空间大小：1247.5828100585936 GB',
+                  value: 1247.5828100585936
+                },
+                { name: '行数：3422981050 行', value: 3422981050 },
+                { name: '空值率：8.47%', value: 0.08473511701489458 }
+              ]
+            },
+            {
+              name: '住院就诊信息',
+              children: [
+                {
+                  name: '表空间大小：1119.857734375 GB',
+                  value: 1119.857734375
+                },
+                { name: '行数：2747684278 行', value: 2747684278 },
+                { name: '空值率：6.60%', value: 0.06604158923396003 }
+              ]
+            },
+            {
+              name: '检验检查信息',
+              children: [
+                { name: '表空间大小：123.046875 GB', value: 123.046875 },
+                { name: '行数：416030001 行', value: 416030001 },
+                { name: '空值率：4.29%', value: 0.042904299675838885 }
+              ]
+            },
+            {
+              name: '诊断明细信息',
+              children: [
+                { name: '表空间大小：1.2109375 GB', value: 1.2109375 },
+                { name: '行数：5021983 行', value: 5021983 },
+                { name: '空值率：0.30%', value: 0.002954199165473743 }
+              ]
+            },
+            {
+              name: '其他',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '电子病历',
+          children: [
+            {
+              name: '体检信息',
+              children: [
+                { name: '表空间大小：26.703125 GB', value: 26.703125 },
+                { name: '行数：76564845 行', value: 76564845 },
+                { name: '空值率：5.04%', value: 0.050371065846456675 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '基础字典',
+          children: [
+            {
+              name: '患者主索引',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            },
+            {
+              name: '医护人员信息表',
+              children: [
+                { name: '表空间大小：0.1640625 GB', value: 0.1640625 },
+                { name: '行数：1010316 行', value: 1010316 },
+                { name: '空值率：57.47%', value: 0.5747395324379159 }
+              ]
+            },
+            {
+              name: '医疗机构信息表',
+              children: [
+                { name: '表空间大小：0.0087890625 GB', value: 0.0087890625 },
+                { name: '行数：71245 行', value: 71245 },
+                { name: '空值率：7.69%', value: 0.07692307692307693 }
+              ]
+            },
+            {
+              name: '其他',
+              children: [
+                {
+                  name: '表空间大小：0.1798095703125 GB',
+                  value: 0.1798095703125
+                },
+                { name: '行数：1318362 行', value: 1318362 },
+                { name: '空值率：13.45%', value: 0.13450874136015445 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      name: '电子健康档案数据库',
+      children: [
+        {
+          name: '健康档案基本数据集',
+          children: [
+            {
+              name: '个人基本信息',
+              children: [
+                { name: '表空间大小：130.0 GB', value: 130.0 },
+                { name: '行数：423023505 行', value: 423023505 },
+                { name: '空值率：12.26%', value: 0.12258385520150455 }
+              ]
+            },
+            {
+              name: '健康体检',
+              children: [
+                { name: '表空间大小：0.0546875 GB', value: 0.0546875 },
+                { name: '行数：23800 行', value: 23800 },
+                { name: '空值率：0.43%', value: 0.004327022660425038 }
+              ]
+            },
+            {
+              name: '传染病报告卡',
+              children: [
+                { name: '表空间大小：0.0859375 GB', value: 0.0859375 },
+                { name: '行数：1872 行', value: 1872 },
+                { name: '空值率：13.28%', value: 0.132788438758588 }
+              ]
+            },
+            {
+              name: '其他',
+              children: [
+                { name: '表空间大小：0.03125 GB', value: 0.03125 },
+                { name: '行数：187 行', value: 187 },
+                { name: '空值率：18.23%', value: 0.1822838054878285 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '疾病管理',
+          children: [
+            {
+              name: '高血压患者健康管理',
+              children: [
+                { name: '表空间大小：19.3975 GB', value: 19.3975 },
+                { name: '行数：78593030 行', value: 78593030 },
+                { name: '空值率：13.38%', value: 0.133830928002187 }
+              ]
+            },
+            {
+              name: '老年人健康管理',
+              children: [
+                { name: '表空间大小：7.336875 GB', value: 7.336875 },
+                { name: '行数：25567801 行', value: 25567801 },
+                { name: '空值率：21.65%', value: 0.216455925637745 }
+              ]
+            },
+            {
+              name: '2 型糖尿病患者健康管理',
+              children: [
+                { name: '表空间大小：14.1865625 GB', value: 14.1865625 },
+                { name: '行数：54590507 行', value: 54590507 },
+                { name: '空值率：10.60%', value: 0.10603459344209547 }
+              ]
+            },
+            {
+              name: '肺结核患者健康管理',
+              children: [
+                { name: '表空间大小：0.53125 GB', value: 0.53125 },
+                { name: '行数：459414 行', value: 459414 },
+                { name: '空值率：11.46%', value: 0.11459347966767904 }
+              ]
+            },
+            {
+              name: '肿瘤病例管理',
+              children: [
+                { name: '表空间大小：0.0390625 GB', value: 0.0390625 },
+                { name: '行数：1112 行', value: 1112 },
+                { name: '空值率：12.33%', value: 0.12330033136486482 }
+              ]
+            },
+            {
+              name: '中医药健康管理',
+              children: [
+                { name: '表空间大小：0.984375 GB', value: 0.984375 },
+                { name: '行数：3309144 行', value: 3309144 },
+                { name: '空值率：17.67%', value: 0.17672859756097561 }
+              ]
+            },
+            {
+              name: '其他',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '疾病控制',
+          children: [
+            {
+              name: '免疫规划监测',
+              children: [
+                { name: '表空间大小：2.77875 GB', value: 2.77875 },
+                { name: '行数：7006765 行', value: 7006765 },
+                { name: '空值率：8.22%', value: 0.08222015018790832 }
+              ]
+            },
+            {
+              name: '精神卫生监测',
+              children: [
+                { name: '表空间大小：0.5546875 GB', value: 0.5546875 },
+                { name: '行数：602330 行', value: 602330 },
+                { name: '空值率：20.38%', value: 0.20381725986572566 }
+              ]
+            },
+            {
+              name: '疾控综合管理与爱国卫生资源管理服务',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '儿童保健',
+          children: [
+            {
+              name: '出生医学证明',
+              children: [
+                {
+                  name: '表空间大小：10.318544921875 GB',
+                  value: 10.318544921875
+                },
+                { name: '行数：21545526 行', value: 21545526 },
+                { name: '空值率：6.73%', value: 0.0672811731182123 }
+              ]
+            },
+            {
+              name: '新生儿遗传代谢病筛查',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            },
+            {
+              name: '新生儿听力筛查',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            },
+            {
+              name: '儿童健康体检',
+              children: [
+                { name: '表空间大小：1.6796875 GB', value: 1.6796875 },
+                { name: '行数：6264823 行', value: 6264823 },
+                { name: '空值率：21.41%', value: 0.21408301638929628 }
+              ]
+            },
+            {
+              name: '5 岁以下儿童死亡报告',
+              children: [
+                { name: '表空间大小：0.046875 GB', value: 0.046875 },
+                { name: '行数：271 行', value: 271 },
+                { name: '空值率：5.78%', value: 0.05783731750360982 }
+              ]
+            },
+            {
+              name: '其他',
+              children: [
+                {
+                  name: '表空间大小：2.7175000000000002 GB',
+                  value: 2.7175000000000002
+                },
+                { name: '行数：8721528 行', value: 8721528 },
+                { name: '空值率：10.10%', value: 0.10095095363800313 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '妇女保健',
+          children: [
+            {
+              name: '婚前保健服务',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            },
+            {
+              name: '孕产期保健与高危管理',
+              children: [
+                { name: '表空间大小：1.03515625 GB', value: 1.03515625 },
+                { name: '行数：3065313 行', value: 3065313 },
+                { name: '空值率：12.28%', value: 0.12278949254995905 }
+              ]
+            },
+            {
+              name: '产前筛查与诊断',
+              children: [
+                {
+                  name: '表空间大小：2.2659374999999997 GB',
+                  value: 2.2659374999999997
+                },
+                { name: '行数：6856258 行', value: 6856258 },
+                { name: '空值率：15.71%', value: 0.15705179850930018 }
+              ]
+            },
+            {
+              name: '出生缺陷监测',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            },
+            {
+              name: '孕产妇死亡报告',
+              children: [
+                { name: '表空间大小：0.015625 GB', value: 0.015625 },
+                { name: '行数：5 行', value: 5 },
+                { name: '空值率：3.56%', value: 0.03559322033898305 }
+              ]
+            },
+            {
+              name: '妇女常见病筛查',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            },
+            {
+              name: '计划生育技术服务',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      name: '其他数据库',
+      children: [
+        {
+          name: '电子病历摘要',
+          children: [
+            { name: '个人基本信息' },
+            { name: '病历概要信息' },
+            { name: '门诊信息' },
+            { name: '住院信息' },
+            { name: '体检信息' },
+            { name: '健康档案信息' },
+            { name: '其他' }
+          ]
+        },
+        {
+          name: '电子健康档案摘要',
+          children: [
+            {
+              name: '个人基本信息',
+              children: [
+                { name: '表空间大小：27.676875 GB', value: 27.676875 },
+                { name: '行数：110446657 行', value: 110446657 },
+                { name: '空值率：21.52%', value: 0.2152217894337392 }
+              ]
+            },
+            {
+              name: '住院记录摘要',
+              children: [
+                { name: '表空间大小：1.84 GB', value: 1.84 },
+                { name: '行数：11574588 行', value: 11574588 },
+                { name: '空值率：10.48%', value: 0.104794 }
+              ]
+            },
+            {
+              name: '用药记录摘要',
+              children: [
+                { name: '表空间大小：0.4375 GB', value: 0.4375 },
+                { name: '行数：2693340 行', value: 2693340 },
+                { name: '空值率：17.91%', value: 0.17908083333333333 }
+              ]
+            },
+            {
+              name: '手术记录摘要',
+              children: [
+                { name: '表空间大小：0.3359375 GB', value: 0.3359375 },
+                { name: '行数：1950714 行', value: 1950714 },
+                { name: '空值率：4.22%', value: 0.0421509740355691 }
+              ]
+            },
+            {
+              name: '疾病史摘要',
+              children: [
+                { name: '表空间大小：1.78 GB', value: 1.78 },
+                { name: '行数：15365198 行', value: 15365198 },
+                { name: '空值率：7.05%', value: 0.07054461538461539 }
+              ]
+            },
+            {
+              name: '过敏史摘要',
+              children: [
+                { name: '表空间大小：0.453125 GB', value: 0.453125 },
+                { name: '行数：3028221 行', value: 3028221 },
+                { name: '空值率：8.33%', value: 0.08333333333333333 }
+              ]
+            },
+            {
+              name: '家族史摘要',
+              children: [
+                { name: '表空间大小：8.39 GB', value: 8.39 },
+                { name: '行数：69767393 行', value: 69767393 },
+                { name: '空值率：3.62%', value: 0.03619928571428571 }
+              ]
+            },
+            {
+              name: '环境暴露因素摘要',
+              children: [
+                { name: '表空间大小：0.3125 GB', value: 0.3125 },
+                { name: '行数：2303724 行', value: 2303724 },
+                { name: '空值率：12.75%', value: 0.12746056571419048 }
+              ]
+            },
+            {
+              name: '输血史摘要',
+              children: [
+                { name: '表空间大小：0.1328125 GB', value: 0.1328125 },
+                { name: '行数：203061 行', value: 203061 },
+                { name: '空值率：2.84%', value: 0.02838031617808439 }
+              ]
+            },
+            {
+              name: '外伤史摘要',
+              children: [
+                { name: '表空间大小：0.1640625 GB', value: 0.1640625 },
+                { name: '行数：404668 行', value: 404668 },
+                { name: '空值率：3.51%', value: 0.03511415240372976 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '人口基础信息共享',
+          children: [
+            {
+              name: '居民健康档案信息',
+              children: [
+                { name: '表空间大小：44.0 GB', value: 44.0 },
+                { name: '行数：104351727 行', value: 104351727 },
+                { name: '空值率：13.17%', value: 0.13173054938605994 }
+              ]
+            },
+            {
+              name: '公安家庭信息',
+              children: [
+                { name: '表空间大小：7.388125 GB', value: 7.388125 },
+                { name: '行数：36139214 行', value: 36139214 },
+                { name: '空值率：9.67%', value: 0.0966669712837724 }
+              ]
+            },
+            {
+              name: '新生儿落户信息',
+              children: [
+                { name: '表空间大小：0.06640625 GB', value: 0.06640625 },
+                { name: '行数：222213 行', value: 222213 },
+                { name: '空值率：20.73%', value: 0.20734435419496405 }
+              ]
+            },
+            {
+              name: '户籍死亡注销信息',
+              children: [
+                { name: '表空间大小：0.1796875 GB', value: 0.1796875 },
+                { name: '行数：277335 行', value: 277335 },
+                { name: '空值率：34.13%', value: 0.3412887944708368 }
+              ]
+            },
+            {
+              name: '婚姻登记信息',
+              children: [
+                { name: '表空间大小：5.108828125 GB', value: 5.108828125 },
+                { name: '行数：30489395 行', value: 30489395 },
+                { name: '空值率：12.16%', value: 0.1215788569624165 }
+              ]
+            },
+            {
+              name: '人口普查登记信息',
+              children: [
+                { name: '表空间大小：2.57 GB', value: 2.57 },
+                { name: '行数：17571249 行', value: 17571249 },
+                { name: '空值率：29.29%', value: 0.2928571428571428 }
+              ]
+            },
+            {
+              name: '人口房屋地理信息',
+              children: [
+                { name: '表空间大小：21.0 GB', value: 21.0 },
+                { name: '行数：112852272 行', value: 112852272 },
+                { name: '空值率：13.41%', value: 0.1340763888888889 }
+              ]
+            },
+            {
+              name: '其他',
+              children: [
+                { name: '表空间大小：1.25 GB', value: 1.25 },
+                { name: '行数：6822895 行', value: 6822895 },
+                { name: '空值率：18.45%', value: 0.1844792105263158 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '远程医疗',
+          children: [
+            { name: '远程会诊' },
+            { name: '远程影像诊断' },
+            { name: '远程心电诊断' },
+            { name: '远程病理诊断' },
+            { name: '远程监护' },
+            { name: '远程手术示教' },
+            { name: '远程医学教育' },
+            { name: '远程预约' },
+            { name: '远程财务管理' },
+            { name: '远程医疗卫生机构与科室数据' },
+            { name: '远程医疗专家数据' },
+            { name: '远程患者数据' },
+            { name: '其他' }
+          ]
+        },
+        {
+          name: '互联网+医疗健康',
+          children: [
+            { name: '互联网+医疗服务' },
+            { name: '互联网+公共卫生服务' },
+            { name: '互联网+家庭医生签约服务' },
+            { name: '互联网+药品供应保障服务' },
+            { name: '互联网+医疗保障结算服务' },
+            { name: '互联网+医学教育和科普服务' },
+            { name: '互联网+人工智能应用服务' },
+            { name: '其他' }
+          ]
+        },
+        {
+          name: '家庭医生签约服务',
+          children: [
+            {
+              name: '签约管理',
+              children: [
+                {
+                  name: '表空间大小：2.42565673828125 GB',
+                  value: 2.42565673828125
+                },
+                { name: '行数：12650431 行', value: 12650431 },
+                { name: '空值率：15.40%', value: 0.15400136299718228 }
+              ]
+            },
+            {
+              name: '服务履约',
+              children: [
+                { name: '表空间大小：4.75 GB', value: 4.75 },
+                { name: '行数：15131549 行', value: 15131549 },
+                { name: '空值率：17.86%', value: 0.17857214285714285 }
+              ]
+            },
+            {
+              name: '团队管理',
+              children: [
+                {
+                  name: '表空间大小：0.00738525390625 GB',
+                  value: 0.00738525390625
+                },
+                { name: '行数：28893 行', value: 28893 },
+                { name: '空值率：23.36%', value: 0.23361137919356123 }
+              ]
+            },
+            {
+              name: '其他',
+              children: [
+                { name: '表空间大小：0.1796875 GB', value: 0.1796875 },
+                { name: '行数：485004 行', value: 485004 },
+                { name: '空值率：14.36%', value: 0.14356138809224492 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '卫生健康综合管理',
+          children: [
+            {
+              name: '卫生资源管理',
+              children: [
+                { name: '表空间大小：0.384765625 GB', value: 0.384765625 },
+                { name: '行数：2195155 行', value: 2195155 },
+                { name: '空值率：32.85%', value: 0.3285243864031064 }
+              ]
+            },
+            {
+              name: '居民电子健康卡管理',
+              children: [
+                {
+                  name: '表空间大小：293.9308514404297 GB',
+                  value: 293.9308514404297
+                },
+                { name: '行数：199857119 行', value: 199857119 },
+                { name: '空值率：7.35%', value: 0.07349453686121026 }
+              ]
+            },
+            {
+              name: '血液管理管理',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            },
+            {
+              name: '药品供应管理',
+              children: [
+                { name: '表空间大小：3.4947265625 GB', value: 3.4947265625 },
+                { name: '行数：10958352 行', value: 10958352 },
+                { name: '空值率：4.69%', value: 0.04694249628917144 }
+              ]
+            },
+            {
+              name: '其他',
+              children: [
+                {
+                  name: '表空间大小：1.07965087890625 GB',
+                  value: 1.07965087890625
+                },
+                { name: '行数：4075029 行', value: 4075029 },
+                { name: '空值率：14.52%', value: 0.14520728150244663 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '医疗卫生监督',
+          children: [
+            {
+              name: '医疗机构监督',
+              children: [
+                {
+                  name: '表空间大小：7.0032177734375 GB',
+                  value: 7.0032177734375
+                },
+                { name: '行数：23896317 行', value: 23896317 },
+                { name: '空值率：41.51%', value: 0.4151390969574105 }
+              ]
+            },
+            {
+              name: '医疗执业人员监督',
+              children: [
+                {
+                  name: '表空间大小：0.00201416015625 GB',
+                  value: 0.00201416015625
+                },
+                { name: '行数：11590 行', value: 11590 },
+                { name: '空值率：14.95%', value: 0.14945202464788732 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '公共卫生监督',
+          children: [
+            {
+              name: '其他',
+              children: [
+                { name: '表空间大小：0.0234375 GB', value: 0.0234375 },
+                { name: '行数：136684 行', value: 136684 },
+                { name: '空值率：45.29%', value: 0.45293606201641007 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '个人电子疾病档案',
+          children: [
+            {
+              name: '死亡登记信息',
+              children: [
+                { name: '表空间大小：0.0 GB', value: 0.0 },
+                { name: '行数：0 行', value: 0 },
+                { name: '空值率：0.00%', value: 0.0 }
+              ]
+            }
+          ]
+        },
+        {
+          name: '健康危害因素',
+          children: [
+            { name: '职业危害' },
+            { name: '核和辐射' },
+            { name: '学生健康' },
+            { name: '饮用水' },
+            { name: '空气污染物' },
+            { name: '地方性危害因素' },
+            { name: '病媒生物' },
+            { name: '其他' }
+          ]
+        },
+        {
+          name: '疾控综合管理与爱国卫生资源管理服务',
+          children: [
+            { name: '疾病预防控制综合管理' },
+            { name: '爱国卫生资源管理服务' },
+            { name: '其他' }
+          ]
+        },
+        {
+          name: '疫苗和冷链管理',
+          children: [
+            { name: '疫苗管理' },
+            { name: '疫苗追溯' },
+            { name: '冷链监测' },
+            { name: '其他' }
+          ]
+        },
+        {
+          name: '医疗服务质量与绩效评价',
+          children: [
+            { name: '医疗服务能力' },
+            { name: '医疗服务效率' },
+            { name: '医疗服务安全' },
+            { name: '学科发展均衡性' },
+            { name: '综合绩效评价' },
+            { name: '其他' }
+          ]
+        }
+      ]
+    }
+  ]
+};
+myChart.hideLoading();
+myChart.setOption(
+  (option = {
+    tooltip: {
+      trigger: 'item',
+      triggerOn: 'mousemove'
+    },
+    legend: {
+      top: '2%',
+      left: '3%',
+      orient: 'vertical',
+      data: [
+        {
+          name: 'tree1',
+          icon: 'rectangle'
+        }
+      ],
+      borderColor: '#c23531'
+    },
+    series: [
+      {
+        type: 'tree',
+        name: 'tree1',
+        data: [data],
+        top: '5%',
+        left: '15%',
+        bottom: '5%',
+        right: '25%',
+        symbolSize: 7,
+        initialTreeDepth: 2,
+        label: {
+          position: 'left',
+          verticalAlign: 'middle',
+          align: 'right'
+        },
+        leaves: {
+          label: {
+            position: 'right',
+            verticalAlign: 'middle',
+            align: 'left'
+            //padding: 10
+          }
+        },
+        emphasis: {
+          focus: 'descendant'
+        },
+        expandAndCollapse: true,
+        animationDuration: 550,
+        animationDurationUpdate: 750,
+        itemStyle: {
+          normal: {
+            color: '#5500DD', //图例的颜色
+            lineStyle: {
+              color: '#5500DD' //线的颜色
+            }
+          }
+        }
+      }
+    ]
+  })
+);
+
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
